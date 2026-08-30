@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Halfbeat AI</title>
+<meta name="description" content="How Halfbeat AI collects, uses, and protects personal information, including call recordings and caller data.">
+<link rel="canonical" href="https://halfbeat.ai/privacy.html">
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0D141C;--slate:#16202B;--line:#243140;--signal:#FF6B1A;
+  --ash:#8B98A7;--paper:#EEF1F4;--body-text:#B9C3CE;
+  --display:'Archivo',system-ui,sans-serif;
+  --body:'IBM Plex Sans',system-ui,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--body-text);font-family:var(--body);
+  font-size:16px;line-height:1.72;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:0 28px}
+
+header{border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:baseline;gap:14px;padding:22px 0}
+.mark{font-family:var(--display);font-weight:800;font-size:19px;letter-spacing:-.02em;color:var(--paper);text-decoration:none}
+.mark span{color:var(--signal)}
+.ent{font-family:var(--mono);font-size:12.5px;color:#C4CDD7;letter-spacing:.03em}
+
+.doc{padding:66px 0 90px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--signal);margin-bottom:20px}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,5vw,2.9rem);
+  line-height:1.06;letter-spacing:-.03em;color:var(--paper);margin-bottom:14px}
+.updated{font-family:var(--mono);font-size:12.5px;color:var(--ash);
+  padding-bottom:30px;border-bottom:1px solid var(--line);margin-bottom:40px}
+
+h2{font-family:var(--display);font-weight:600;font-size:1.24rem;letter-spacing:-.02em;
+  color:var(--paper);margin:52px 0 16px;padding-top:26px;border-top:1px solid var(--line)}
+h2:first-of-type{border-top:none;padding-top:0;margin-top:0}
+h3{font-family:var(--body);font-weight:600;font-size:1.02rem;color:var(--paper);margin:30px 0 10px}
+p{margin-bottom:16px}
+strong{color:var(--paper);font-weight:600}
+a{color:var(--signal);text-decoration:none;border-bottom:1px solid rgba(255,107,26,.35)}
+a:hover{border-bottom-color:var(--signal)}
+ul{margin:0 0 18px 0;list-style:none}
+li{padding-left:22px;position:relative;margin-bottom:9px}
+li::before{content:'';position:absolute;left:0;top:.68em;width:9px;height:2px;background:var(--signal)}
+
+.short{background:var(--slate);border-left:3px solid var(--signal);
+  padding:15px 20px;margin:0 0 22px;font-size:.94rem;color:#A9B4C0}
+.short strong{color:var(--paper)}
+
+.toc{background:var(--slate);padding:24px 26px;margin:0 0 46px;border:1px solid var(--line)}
+.toc h2{font-size:.95rem;margin:0 0 14px;border:none;padding:0;
+  font-family:var(--mono);font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--ash)}
+.toc ol{list-style:none;counter-reset:t;columns:2;column-gap:34px}
+.toc li{counter-increment:t;padding-left:30px;margin-bottom:7px;font-size:.9rem;break-inside:avoid}
+.toc li::before{content:counter(t);background:none;color:var(--signal);
+  font-family:var(--mono);font-size:.78rem;top:.15em;width:auto;height:auto}
+.toc a{border:none;color:var(--body-text)}
+.toc a:hover{color:var(--signal)}
+
+.addr{font-family:var(--mono);font-size:.9rem;line-height:1.85;
+  background:var(--slate);padding:20px 24px;border:1px solid var(--line);margin-bottom:18px}
+
+table{width:100%;border-collapse:collapse;margin:0 0 22px;font-size:.88rem}
+th{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;
+  text-align:left;padding:11px 12px;background:var(--slate);color:var(--paper);border-bottom:1px solid var(--line)}
+td{padding:12px;border-bottom:1px solid var(--line);vertical-align:top}
+td:last-child{font-family:var(--mono);font-size:.82rem;text-align:center;width:70px}
+.yes{color:var(--signal);font-weight:500}
+.no{color:var(--ash)}
+
+footer{border-top:1px solid var(--line);padding:34px 0 46px}
+.foot{display:flex;flex-wrap:wrap;gap:18px 30px;justify-content:space-between;
+  align-items:baseline;font-family:var(--mono);font-size:12px;color:var(--ash)}
+.foot a{color:var(--ash);border-bottom:1px solid var(--line)}
+.foot a:hover{color:var(--paper);border-bottom-color:var(--ash)}
+.foot nav{display:flex;gap:22px;flex-wrap:wrap}
+
+a:focus-visible{outline:2px solid var(--signal);outline-offset:3px}
+@media (max-width:620px){.toc ol{columns:1}.doc{padding:44px 0 60px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="mark" href="/">Halfbeat<span>.</span></a>
+    <div class="ent">by Praxis Protocol LLC</div>
+  </div>
+</header>
+
+<main class="wrap doc">
+  <div class="eyebrow">Legal</div>
+  <h1>Privacy Policy</h1>
+  <div class="updated">Last updated August 28, 2026</div>
+
+  <p>This Privacy Policy for <strong>Praxis Protocol LLC</strong> (doing business as <strong>Halfbeat AI</strong>) — "we," "us," or "our" — describes how and why we may access, collect, store, use, and share ("process") your personal information when you use our services, including when you:</p>
+  <ul>
+    <li>Visit our website at <a href="https://halfbeat.ai">halfbeat.ai</a></li>
+    <li>Telephone a business that uses Halfbeat AI to answer its calls</li>
+    <li>Engage with us in any other related way</li>
+  </ul>
+  <p><strong>Questions or concerns?</strong> Reading this policy will help you understand your privacy rights and choices. If you do not agree with our practices, please do not use our services. If you have questions, contact us at <a href="mailto:cbosman@praxisprotocol.io">cbosman@praxisprotocol.io</a>.</p>
+
+  <div class="toc">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#s1">What information we collect</a></li>
+      <li><a href="#s2">How we process your information</a></li>
+      <li><a href="#s3">When and with whom we share it</a></li>
+      <li><a href="#s4">Artificial intelligence</a></li>
+      <li><a href="#s5">How long we keep information</a></li>
+      <li><a href="#s6">How we keep it safe</a></li>
+      <li><a href="#s7">Information from minors</a></li>
+      <li><a href="#s8">Your privacy rights</a></li>
+      <li><a href="#s9">Do-Not-Track</a></li>
+      <li><a href="#s10">US state privacy rights</a></li>
+      <li><a href="#s11">Automated call answering</a></li>
+      <li><a href="#s12">Updates to this policy</a></li>
+      <li><a href="#s13">How to contact us</a></li>
+      <li><a href="#s14">Review, update, or delete</a></li>
+    </ol>
+  </div>
+
+  <h2 id="s1">1. What information we collect</h2>
+  <div class="short"><strong>In short:</strong> We collect information you give us, information generated automatically when you call, and call recordings.</div>
+
+  <h3>Information you provide</h3>
+  <p>We collect personal information you voluntarily provide when you telephone a business that uses our service, register on our services, or contact us. This may include:</p>
+  <ul>
+    <li>Names</li>
+    <li>Phone numbers</li>
+    <li>Email addresses</li>
+    <li>Mailing and service addresses</li>
+    <li>Usernames and passwords</li>
+    <li>Contact preferences</li>
+    <li>Billing addresses</li>
+    <li>Voice recordings and call transcripts</li>
+    <li>Service request details, including the nature and urgency of the problem reported</li>
+  </ul>
+  <p><strong>Sensitive information.</strong> We do not process sensitive personal information.</p>
+  <p><strong>Payment data.</strong> We use Stripe to process payments from our business clients. Payment information is transmitted directly to Stripe and is not stored on our systems. Stripe's handling of that information is governed by <a href="https://stripe.com/privacy" rel="noopener">their privacy policy</a>. We do not collect payment information from callers.</p>
+
+  <h3>Information collected automatically</h3>
+  <p>Some information is generated automatically rather than provided by you:</p>
+  <ul>
+    <li><strong>Call data.</strong> Your phone number as delivered by caller ID, the date, time, and duration of the call, an audio recording of the call, an automatically generated transcript, and technical identifiers associated with the call.</li>
+    <li><strong>Log and usage data.</strong> Service-related, diagnostic, and performance information our systems record, such as timestamps, system activity, and error reports.</li>
+  </ul>
+  <p><strong>Google APIs.</strong> Our use of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements.</p>
+
+  <h3>Information from other sources</h3>
+  <p>We receive information about you from our telephony and voice service providers, which deliver your phone number, call metadata, and call audio to us. We may also receive customer or membership information from our business clients so that the assistant can recognize returning callers.</p>
+  <p>We do not obtain information about you from data brokers, marketing partners, or social media platforms, and we do not use any information for targeted advertising.</p>
+
+  <h2 id="s2">2. How we process your information</h2>
+  <div class="short"><strong>In short:</strong> To answer calls, book appointments, notify our clients, keep the service running, and comply with the law.</div>
+  <ul>
+    <li><strong>To answer calls and schedule appointments on behalf of our business clients.</strong> We use information collected during a call to answer inbound telephone calls placed to our clients' phone numbers, gather the details of your service request, schedule appointments in the client's calendar, and notify the client of the call and its outcome.</li>
+    <li><strong>To identify and escalate emergency service requests.</strong> We analyze the content of a call to determine whether you are reporting an urgent or emergency situation, and if so, immediately notify our business client by phone and text message so they can respond.</li>
+    <li><strong>To deliver and facilitate delivery of services.</strong></li>
+    <li><strong>To send administrative information</strong>, including appointment confirmations and reminders.</li>
+    <li><strong>To respond to inquiries and offer support.</strong></li>
+    <li><strong>To fulfill and manage orders</strong> and billing for our business clients.</li>
+    <li><strong>To facilitate account creation and authentication</strong> where an account is offered.</li>
+    <li><strong>To protect our services</strong>, including fraud monitoring and prevention.</li>
+    <li><strong>To evaluate and improve our services</strong> and identify usage trends.</li>
+    <li><strong>To comply with our legal obligations.</strong></li>
+  </ul>
+  <p>We do not process your information to send marketing or promotional communications, or for targeted advertising.</p>
+
+  <h2 id="s3">3. When and with whom we share your personal information</h2>
+  <div class="short"><strong>In short:</strong> With the business you called, and with the service providers that make the service work.</div>
+  <p>We share your data with third-party vendors and service providers who perform services for us and require access to that information to do their work. We have contracts in place with each of them designed to safeguard your personal information. They cannot use your information for their own purposes.</p>
+  <p>The third parties we share personal information with are:</p>
+  <ul>
+    <li><strong>VAPI</strong> — voice AI platform. Receives call audio and caller information to operate the automated assistant.</li>
+    <li><strong>Twilio</strong> — telephony and SMS delivery. Receives caller phone numbers and message content.</li>
+    <li><strong>OpenAI</strong> — language processing. Receives call transcript content to generate responses.</li>
+    <li><strong>Deepgram</strong> — speech recognition. Receives call audio to produce transcripts.</li>
+    <li><strong>Google</strong> — cloud storage and calendar. Receives caller information and appointment details for scheduling and record keeping.</li>
+    <li><strong>Stripe</strong> — payment processing for business client billing.</li>
+    <li><strong>GitHub Pages</strong> — website hosting.</li>
+    <li><strong>Our business clients</strong> — receive information about callers who telephoned their business, including name, contact details, and service request.</li>
+  </ul>
+  <p><strong>Business transfers.</strong> We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.</p>
+
+  <h2 id="s4">4. Artificial intelligence</h2>
+  <div class="short"><strong>In short:</strong> Our service is powered by AI. You can ask for a human at any time.</div>
+  <p>We offer products and features powered by artificial intelligence and machine learning. We provide these through third-party AI service providers, including <strong>VAPI</strong>, <strong>Deepgram</strong>, and <strong>OpenAI</strong>. Your input, output, and personal information are shared with and processed by these providers to enable the service.</p>
+  <p>Our AI products are designed for AI automation, natural language processing, automated speech recognition and speech synthesis, and answering inbound telephone calls.</p>
+  <h3>How to opt out</h3>
+  <p><strong>Callers who prefer not to speak with an automated assistant may say so at any point during the call.</strong> The assistant will take a message and notify the business owner to call you back directly.</p>
+  <p>You may also request that we delete any recording or transcript of your call by contacting us at <a href="mailto:cbosman@praxisprotocol.io">cbosman@praxisprotocol.io</a>. Where an account is offered, you can update your preferences in your account settings.</p>
+
+  <h2 id="s5">5. How long we keep your information</h2>
+  <div class="short"><strong>In short:</strong> Recordings and transcripts are deleted after 90 days. Most other information is kept for one year.</div>
+  <table>
+    <tr><th>Information</th><th>Retained for</th></tr>
+    <tr><td>Call recordings</td><td>90 days</td></tr>
+    <tr><td>Call transcripts</td><td>90 days</td></tr>
+    <tr><td>Call summaries and appointment records</td><td>12 months</td></tr>
+    <tr><td>Contact information and service request details</td><td>12 months from last interaction</td></tr>
+    <tr><td>Business client account and billing records</td><td>Duration of the relationship, then 7 years for tax and legal purposes</td></tr>
+  </table>
+  <p>When we have no ongoing legitimate business need to process your personal information, we will delete or anonymize it. Where deletion is not immediately possible — for example, because information is held in backup archives — we securely store it and isolate it from further processing until deletion is possible.</p>
+
+  <h2 id="s6">6. How we keep your information safe</h2>
+  <div class="short"><strong>In short:</strong> We use organizational and technical security measures, but no system is perfectly secure.</div>
+  <p>We have implemented appropriate and reasonable technical and organizational security measures designed to protect the personal information we process. These include encrypted credential storage, two-factor authentication on all platform accounts, encrypted transmission, access restrictions on administrative systems, and defined retention limits with scheduled deletion.</p>
+  <p>Despite these safeguards, no electronic transmission over the internet or information storage technology can be guaranteed to be completely secure. We cannot promise that unauthorized third parties will never defeat our security and improperly access your information.</p>
+
+  <h2 id="s7">7. Information from minors</h2>
+  <div class="short"><strong>In short:</strong> We do not knowingly collect information from anyone under 18.</div>
+  <p>We do not knowingly collect, solicit data from, or market to children under 18 years of age, nor do we knowingly sell such personal information. If we learn that personal information from a user under 18 has been collected, we will take reasonable measures to promptly delete it from our records. If you become aware of any data we may have collected from a child under 18, contact us at <a href="mailto:cbosman@praxisprotocol.io">cbosman@praxisprotocol.io</a>.</p>
+
+  <h2 id="s8">8. Your privacy rights</h2>
+  <div class="short"><strong>In short:</strong> You can ask us what we hold about you, correct it, or have it deleted — regardless of where you live.</div>
+  <p><strong>We honor access, correction, and deletion requests from everyone</strong>, not only residents of states whose laws require it.</p>
+  <p>Email us at <a href="mailto:cbosman@praxisprotocol.io">cbosman@praxisprotocol.io</a> to request access to, correction of, or deletion of any information we hold about you, including information collected during a phone call. <strong>We will respond within 30 days.</strong></p>
+  <p><strong>Withdrawing consent.</strong> Where we rely on your consent to process your personal information, you have the right to withdraw that consent at any time by contacting us. This will not affect the lawfulness of processing carried out before withdrawal.</p>
+  <p>We may retain some information after a deletion request to prevent fraud, assist with investigations, enforce our legal terms, or comply with legal requirements.</p>
+
+  <h2 id="s9">9. Controls for Do-Not-Track features</h2>
+  <p>Most web browsers include a Do-Not-Track ("DNT") feature you can activate to signal a preference not to have your online browsing activity monitored. No uniform technology standard for recognizing and implementing DNT signals has been finalized, so we do not currently respond to DNT browser signals. If a standard is adopted that we must follow, we will describe that practice in a revised version of this policy.</p>
+  <p>Our website does not use cookies, analytics, or tracking technologies of any kind.</p>
+
+  <h2 id="s10">10. US state privacy rights</h2>
+  <div class="short"><strong>In short:</strong> If you live in California, Colorado, Connecticut, Delaware, Florida, Indiana, Iowa, Kentucky, Maryland, Minnesota, Montana, Nebraska, New Hampshire, New Jersey, Oregon, Rhode Island, Tennessee, Texas, Utah, or Virginia, you have specific rights.</div>
+
+  <h3>Categories of personal information we collect</h3>
+  <table>
+    <tr><th>Category</th><th>Examples</th><th>Collected</th></tr>
+    <tr><td>A. Identifiers</td><td>Name, postal address, telephone number, email address, unique identifiers</td><td class="yes">YES</td></tr>
+    <tr><td>B. California Customer Records</td><td>Name, contact information, employment information</td><td class="yes">YES</td></tr>
+    <tr><td>C. Protected classifications</td><td>Gender, age, race, marital status</td><td class="no">NO</td></tr>
+    <tr><td>D. Commercial information</td><td>Service requests, booking history</td><td class="yes">YES</td></tr>
+    <tr><td>E. Biometric information</td><td>Fingerprints and voiceprints</td><td class="no">NO</td></tr>
+    <tr><td>F. Internet or network activity</td><td>Browsing history, online behavior</td><td class="no">NO</td></tr>
+    <tr><td>G. Geolocation data</td><td>Device location</td><td class="no">NO</td></tr>
+    <tr><td>H. Audio, electronic, sensory</td><td>Call recordings and transcripts</td><td class="yes">YES</td></tr>
+    <tr><td>I. Professional or employment</td><td>Business type, occupation</td><td class="yes">YES</td></tr>
+    <tr><td>J. Education information</td><td>Student records</td><td class="no">NO</td></tr>
+    <tr><td>K. Inferences</td><td>Lead scoring, urgency classification</td><td class="yes">YES</td></tr>
+    <tr><td>L. Sensitive personal information</td><td>&mdash;</td><td class="no">NO</td></tr>
+  </table>
+
+  <h3>Retention by category</h3>
+  <ul>
+    <li>Category H (call recordings and transcripts) — <strong>90 days</strong></li>
+    <li>Categories A, B, D, I, and K — <strong>1 year</strong></li>
+  </ul>
+
+  <h3>Sale and sharing</h3>
+  <p><strong>We have not sold or shared any personal information to third parties for a business or commercial purpose.</strong> We have disclosed categories A, B, D, H, I, and K to the service providers and business clients listed in section 3, for the purposes described there.</p>
+  <p>We may use your personal information for our own business purposes, such as internal research for technological development. This is not considered "selling" your personal information.</p>
+
+  <h3>Your rights</h3>
+  <p>These rights are not absolute, and in certain cases we may decline a request as permitted by law.</p>
+  <ul>
+    <li>Right to know whether we are processing your personal data</li>
+    <li>Right to access your personal data</li>
+    <li>Right to correct inaccuracies</li>
+    <li>Right to request deletion</li>
+    <li>Right to obtain a copy of the data you shared with us</li>
+    <li>Right to non-discrimination for exercising your rights</li>
+    <li>Right to opt out of processing for targeted advertising, sale of personal data, or profiling in furtherance of decisions producing legal or similarly significant effects</li>
+  </ul>
+  <p>Depending on your state, you may also have the right to obtain lists of the categories or specific third parties to which we have disclosed personal data, to question how personal data has been profiled, and to limit the use of sensitive personal data.</p>
+
+  <h3>How to exercise your rights</h3>
+  <p>Email <a href="mailto:cbosman@praxisprotocol.io">cbosman@praxisprotocol.io</a>, or write to us at the postal address in section 13.</p>
+  <p>You can designate an authorized agent to make a request on your behalf. We may deny a request from an agent who does not provide proof of valid authorization.</p>
+  <p><strong>Verification.</strong> We will need to verify your identity before acting on a request. We will only use information provided in your request for verification and fraud prevention.</p>
+  <p><strong>Appeals.</strong> If we decline to act on your request, you may appeal by emailing <a href="mailto:cbosman@praxisprotocol.io">cbosman@praxisprotocol.io</a>. We will inform you in writing of any action taken or not taken, with an explanation. If your appeal is denied, you may submit a complaint to your state attorney general.</p>
+  <p><strong>California "Shine the Light" law.</strong> California residents may request, once a year and free of charge, information about categories of personal information we disclosed to third parties for direct marketing purposes. <strong>We do not disclose personal information to third parties for their direct marketing purposes.</strong> Requests may be submitted in writing using the contact details in section 13.</p>
+
+  <h2 id="s11">11. Automated call answering and recording</h2>
+  <p>When you telephone a business that uses Halfbeat AI, <strong>your call is answered by an automated assistant rather than a person.</strong> At the beginning of every call, we tell you that you are speaking with an automated assistant and that the call is being recorded. By continuing the call after that notice, you consent to the recording.</p>
+  <p>We apply this practice to every call regardless of the state you are calling from, <strong>including states that require all parties to consent to recording.</strong></p>
+  <p>If you would prefer not to speak with an automated assistant, you may say so at any point during the call. The assistant will take a message and notify the business owner to call you back directly.</p>
+  <p>The recording and transcript of your call are used to schedule your appointment, notify the business you called, improve the accuracy of the assistant, and resolve any dispute about what was discussed. <strong>Recordings and transcripts are deleted after 90 days.</strong></p>
+  <p>You may request deletion of the recording and transcript of your call at any time by contacting us at <a href="mailto:cbosman@praxisprotocol.io">cbosman@praxisprotocol.io</a>.</p>
+
+  <h2 id="s12">12. Updates to this policy</h2>
+  <p>We may update this Privacy Policy from time to time. The updated version will be indicated by a revised date at the top of this page. If we make material changes, we may notify you by prominently posting a notice of those changes or by sending a direct notification.</p>
+
+  <h2 id="s13">13. How to contact us</h2>
+  <p>Questions or comments about this policy may be directed to our Data Protection Officer by email at <a href="mailto:cbosman@praxisprotocol.io">cbosman@praxisprotocol.io</a>, or by post:</p>
+  <div class="addr">
+    Praxis Protocol LLC<br>
+    Data Protection Officer<br>
+    30 N Gould St<br>
+    Sheridan, WY 82801<br>
+    United States
+  </div>
+
+  <h2 id="s14">14. How to review, update, or delete your data</h2>
+  <p>You have the right to request access to the personal information we collect from you, details about how we have processed it, correction of inaccuracies, or deletion of your personal information. You may also have the right to withdraw consent to our processing.</p>
+  <p>To make a request, email <a href="mailto:cbosman@praxisprotocol.io">cbosman@praxisprotocol.io</a>. We will respond within 30 days.</p>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>Halfbeat AI — a service of Praxis Protocol LLC &middot; Fredericksburg, Virginia</div>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/privacy.html">Privacy</a>
+      <a href="/terms.html">Terms</a>
+      <a href="mailto:cbosman@praxisprotocol.io">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
