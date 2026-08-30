@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Halfbeat AI — 24/7 call answering for home services contractors</title>
+<meta name="description" content="Halfbeat AI answers your phone around the clock, books the job into your calendar, and escalates real emergencies to your cell. Built for plumbers, HVAC, electrical, and roofing contractors.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://halfbeat.ai/">
+<meta property="og:title" content="Halfbeat AI — 24/7 call answering for home services contractors">
+<meta property="og:description" content="Answers your phone around the clock, books the job, and escalates real emergencies to your cell.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://halfbeat.ai/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0D141C;
+  --slate:#16202B;
+  --line:#243140;
+  --signal:#FF6B1A;
+  --ash:#8B98A7;
+  --paper:#EEF1F4;
+  --display:'Archivo',system-ui,sans-serif;
+  --body:'IBM Plex Sans',system-ui,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--ink);color:var(--paper);
+  font-family:var(--body);font-size:17px;line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:940px;margin:0 auto;padding:0 28px}
+
+/* ---- nav ---- */
+header{border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:baseline;gap:14px;padding:22px 0}
+.mark{font-family:var(--display);font-weight:800;font-size:19px;letter-spacing:-.02em}
+.mark span{color:var(--signal)}
+.ent{font-family:var(--mono);font-size:11.5px;color:var(--ash);letter-spacing:.04em}
+
+/* ---- hero ---- */
+.hero{padding:88px 0 76px}
+.eyebrow{
+  font-family:var(--mono);font-size:12px;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--signal);margin-bottom:26px;
+}
+h1{
+  font-family:var(--display);font-weight:800;
+  font-size:clamp(2.5rem,6.4vw,4.3rem);line-height:1.02;
+  letter-spacing:-.035em;margin-bottom:26px;
+}
+h1 em{font-style:normal;color:var(--signal)}
+.lede{font-size:clamp(1.05rem,2.2vw,1.3rem);color:#C4CDD7;max-width:35ch}
+
+/* ---- signature: ring cadence ---- */
+.cadence{margin:60px 0 0;padding:26px 0 0;border-top:1px solid var(--line)}
+.cadence-label{
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;
+  color:var(--ash);margin-bottom:16px;
+}
+.bars{display:flex;align-items:flex-end;gap:5px;height:46px}
+.bar{width:9px;background:var(--line);border-radius:1px;height:12px}
+.bar.on{animation:ring 6s ease-in-out infinite}
+.bar.lost{background:var(--line);opacity:.45}
+@keyframes ring{
+  0%,100%{height:12px;background:var(--line)}
+  6%{height:44px;background:var(--signal)}
+  14%{height:12px;background:var(--line)}
+  20%{height:44px;background:var(--signal)}
+  28%{height:12px;background:var(--line)}
+}
+.bar:nth-child(1){animation-delay:0s}
+.bar:nth-child(2){animation-delay:.09s}
+.bar:nth-child(3){animation-delay:.18s}
+.bar:nth-child(4){animation-delay:.27s}
+.bar:nth-child(5){animation-delay:.36s}
+.bar:nth-child(6){animation-delay:.45s}
+.bar:nth-child(7){animation-delay:.54s}
+.bar:nth-child(8){animation-delay:.63s}
+.cadence-note{
+  font-family:var(--mono);font-size:12px;color:var(--ash);
+  margin-top:16px;letter-spacing:.02em;
+}
+
+/* ---- sections ---- */
+section{padding:76px 0;border-top:1px solid var(--line)}
+h2{
+  font-family:var(--display);font-weight:600;
+  font-size:clamp(1.5rem,3.2vw,2rem);letter-spacing:-.025em;
+  margin-bottom:34px;
+}
+.grid{display:grid;gap:38px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.item h3{
+  font-family:var(--body);font-weight:600;font-size:1.02rem;
+  margin-bottom:9px;
+}
+.item p{color:#A9B4C0;font-size:.96rem;line-height:1.62}
+.item .tag{
+  font-family:var(--mono);font-size:11px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--signal);
+  display:block;margin-bottom:11px;
+}
+ul.plain{list-style:none;display:grid;gap:13px;max-width:60ch}
+ul.plain li{padding-left:22px;position:relative;color:#A9B4C0}
+ul.plain li::before{
+  content:'';position:absolute;left:0;top:.62em;
+  width:9px;height:2px;background:var(--signal);
+}
+.note{color:var(--ash);font-size:.93rem;max-width:60ch;margin-top:26px}
+
+/* ---- contact ---- */
+.contact{background:var(--slate);border-top:1px solid var(--line)}
+.contact .wrap{padding-top:76px;padding-bottom:76px}
+a.mail{
+  font-family:var(--display);font-weight:600;
+  font-size:clamp(1.3rem,3.6vw,2rem);color:var(--paper);
+  text-decoration:none;border-bottom:2px solid var(--signal);
+  padding-bottom:3px;letter-spacing:-.02em;display:inline-block;
+}
+a.mail:hover{color:var(--signal)}
+
+/* ---- footer ---- */
+footer{border-top:1px solid var(--line);padding:34px 0 46px}
+.foot{
+  display:flex;flex-wrap:wrap;gap:18px 30px;
+  justify-content:space-between;align-items:baseline;
+  font-family:var(--mono);font-size:12px;color:var(--ash);
+}
+.foot a{color:var(--ash);text-decoration:none;border-bottom:1px solid var(--line)}
+.foot a:hover{color:var(--paper)}
+.foot nav{display:flex;gap:22px;flex-wrap:wrap}
+
+a:focus-visible,.mail:focus-visible{outline:2px solid var(--signal);outline-offset:4px}
+
+@media (prefers-reduced-motion:reduce){
+  .bar.on{animation:none;height:44px;background:var(--signal)}
+  html{scroll-behavior:auto}
+}
+@media (max-width:600px){
+  .hero{padding:60px 0 52px}
+  section{padding:56px 0}
+  .nav{flex-wrap:wrap;gap:6px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="mark">Halfbeat<span>.</span></div>
+    <div class="ent">A service of Praxis Protocol LLC</div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <div class="eyebrow">Call answering for the trades</div>
+    <h1>You were under a sink.<br>They called <em>the next guy</em>.</h1>
+    <p class="lede">Halfbeat answers your phone around the clock, books the job straight into your calendar, and texts you the details before you're off the ladder.</p>
+
+    <div class="cadence" aria-hidden="true">
+      <div class="cadence-label">RING CADENCE — 2s ON / 4s OFF</div>
+      <div class="bars">
+        <div class="bar on"></div><div class="bar on"></div><div class="bar on"></div>
+        <div class="bar on"></div><div class="bar on"></div>
+        <div class="bar lost"></div><div class="bar lost"></div><div class="bar lost"></div>
+      </div>
+      <div class="cadence-note">Six rings is about twenty seconds. That's the whole window.</div>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <h2>What it does on a call</h2>
+      <div class="grid">
+        <div class="item">
+          <span class="tag">Answers</span>
+          <h3>Every call, every hour</h3>
+          <p>Nights, weekends, and the middle of a job. It picks up on the first ring and it never sounds rushed.</p>
+        </div>
+        <div class="item">
+          <span class="tag">Qualifies</span>
+          <h3>Gets the details right</h3>
+          <p>Name, address, what's wrong, how urgent. Built around your services and the words your customers actually use.</p>
+        </div>
+        <div class="item">
+          <span class="tag">Books</span>
+          <h3>Into your calendar</h3>
+          <p>Not a message for you to deal with in the morning. An appointment on the schedule, confirmed by text.</p>
+        </div>
+        <div class="item">
+          <span class="tag">Escalates</span>
+          <h3>Emergencies reach you</h3>
+          <p>Burst pipe at 2am, no heat in January, sparking panel. It calls your cell and keeps trying until someone picks up.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Who it's built for</h2>
+      <ul class="plain">
+        <li>Plumbing, HVAC, electrical, and roofing contractors</li>
+        <li>One to five trucks, no full-time office staff</li>
+        <li>Owners who answer their own phone, or watch it go to voicemail</li>
+        <li>Anyone who takes calls that genuinely can't wait until morning</li>
+      </ul>
+      <p class="note">Every system is built for one business — your services, your service area, your hours, your on-call order. It isn't a template with your name dropped in.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>How it's set up</h2>
+      <div class="grid">
+        <div class="item">
+          <h3>Built, then tested</h3>
+          <p>Every deployment runs through a full set of call scenarios before it touches your line. Including the ones where the caller is difficult.</p>
+        </div>
+        <div class="item">
+          <h3>Managed, not handed over</h3>
+          <p>You don't configure anything. Your hours change, your pricing changes, you call and it changes.</p>
+        </div>
+        <div class="item">
+          <h3>Honest on the phone</h3>
+          <p>It says up front that it's an assistant. Callers are told the line is recorded. No one is tricked into anything.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="contact" id="contact">
+  <div class="wrap">
+    <h2>Talk to us</h2>
+    <p class="lede" style="margin-bottom:30px">Tell us what trade you're in and how you handle calls now. We'll tell you honestly whether this is worth it for you.</p>
+    <a class="mail" href="mailto:craig@halfbeat.ai">craig@halfbeat.ai</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap foot">
+    <div>Halfbeat AI — a service of Praxis Protocol LLC · Fredericksburg, Virginia</div>
+    <nav>
+      <a href="/privacy.html">Privacy</a>
+      <a href="/terms.html">Terms</a>
+      <a href="mailto:craig@halfbeat.ai">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
